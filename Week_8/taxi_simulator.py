@@ -17,7 +17,6 @@ def main():
         if menu_choice == "c":
             print("Taxis available: ")
             display_taxis(taxis)
-            # no error-checking
             taxi_choice = int(input("Choose taxi: "))
             current_taxi = taxis[taxi_choice]
         elif menu_choice == "d":

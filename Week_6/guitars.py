@@ -17,9 +17,7 @@ def main():
     guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
     guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
 
-    if guitars:  # lists, strings and other collections are False when empty, True when non-empty
-        # In order for sorting to work on Guitar objects,
-        # at least the __lt__ method must be defined in Guitar class
+    if guitars:
         guitars.sort()
         print("These are my guitars:")
         for i, guitar in enumerate(guitars):
